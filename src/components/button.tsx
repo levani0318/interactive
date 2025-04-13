@@ -11,8 +11,10 @@ function Burtula() {
         return (
           <button
             key={index}
-            onClick={() => SetOrangeSelected(number)}
-            className="selected"
+            onClick={() => setOrangeSelected(number)}
+            className={`selected ${
+              number === orangeSelected ? "bg-[#FC7614]" : "bg-[#262E38]"
+            }`}
           >
             {number}
           </button>
